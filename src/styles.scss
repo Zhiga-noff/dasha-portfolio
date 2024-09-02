@@ -1,0 +1,49 @@
+// Добавляем обнуляющий стиль
+@import "assets/styles/normalize.scss";
+
+@import "assets/styles/fonts";
+
+// Добавляем шаблоны цветов
+@import "assets/styles/colors.scss";
+
+html {
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100vw;
+  line-height: 100%;
+
+  font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1920 - 320)));
+
+  @media screen and (max-width: 992px) {
+    font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (768 - 320)));
+  }
+
+  &.lock {
+
+    overflow: hidden !important;
+  }
+}
+
+body {
+  font-size: 1rem;
+  font-family: 'Inter', serif;
+  font-weight: 400;
+  padding: 1rem;
+  color: $text;
+}
+
+.btn {
+  background-color: $btn;
+  color: white;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: .6rem;
+
+  transition-duration: .2s;
+
+  &:hover {
+    background-color: $btnAct;
+  }
+}

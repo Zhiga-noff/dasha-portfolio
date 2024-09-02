@@ -1,0 +1,20 @@
+<header class="header">
+  <nav class="header__nav">
+    <div class="header__active"
+         (click)="callDropMenu()"
+         [ngClass]="{act: activeDrop}">
+
+      <p>{{activeRoute}}</p>
+      <ul class="header__drop-menu" [ngClass]="{noneAct: activeDrop}">
+        <li *ngFor="let link of menu"
+            (click)="setActiveRoute(link.name)"
+            [ngClass]="{none: activeRoute === link.name}"
+        >
+          <a [routerLink]="link.link">{{link.name}}</a>
+        </li>
+      </ul>
+    </div>
+
+    <button class="btn">Отправить заявку</button>
+  </nav>
+</header>
