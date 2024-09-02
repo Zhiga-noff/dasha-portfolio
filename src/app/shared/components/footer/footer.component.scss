@@ -1,0 +1,44 @@
+@import "../../../../assets/styles/colors";
+
+.footer {
+  border-radius: 2.1rem;
+  background-color: $text;
+  padding: 3.3rem 4rem 2rem;
+  // .footer__row
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  // .footer__menu
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.75rem;
+
+    a {
+      color: #B8BECB;
+      transition-duration: .2s;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  // .footer__social
+  &__social {
+  }
+
+  &__hr {
+    height: 1px;
+    width: 100%;
+    background-color: #757784;
+    margin: 2.9rem 0 4.8rem;
+  }
+
+  // .footer__policy
+  &__policy {
+  }
+}
