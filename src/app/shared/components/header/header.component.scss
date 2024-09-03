@@ -5,7 +5,8 @@
   background-color: $lightBack;
   width: calc(100% - 2rem);
   padding: 1.25rem 4.15rem;
-  border-radius: 2.15rem;
+  z-index: 10;
+
 
   // .header__nav
   &__nav {

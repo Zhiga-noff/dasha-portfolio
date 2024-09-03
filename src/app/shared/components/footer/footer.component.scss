@@ -1,7 +1,6 @@
 @import "../../../../assets/styles/colors";
 
 .footer {
-  border-radius: 2.1rem;
   background-color: $text;
   padding: 3.3rem 4rem 2rem;
   // .footer__row
@@ -32,6 +31,7 @@
     display: flex;
     align-items: center;
     column-gap: 2.8rem;
+    margin-right: 3.25rem;
 
     a {
       display: flex;

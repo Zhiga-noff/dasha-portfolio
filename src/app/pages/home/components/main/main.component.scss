@@ -1,0 +1,33 @@
+@import "../../../../../assets/styles/colors";
+
+.home-main {
+  padding: 10.4rem 4rem;
+  background-color: $lightBack;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  // .home-main__title
+  &__title {
+    font-size: 6.25rem;
+    margin-bottom: 2rem;
+    max-width: 29.75rem;
+  }
+
+  // .home-main__subtitle
+  &__subtitle {
+  }
+
+  &__cursor {
+    max-width: 11rem;
+    position: absolute;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.title {
+}
