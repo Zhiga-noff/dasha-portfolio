@@ -29,16 +29,48 @@
 
   // .footer__social
   &__social {
+    display: flex;
+    align-items: center;
+    column-gap: 2.8rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      column-gap: .5rem;
+
+      color: #B8BECB;
+      transition-duration: .2s;
+
+      &:hover {
+        color: white;
+      }
+    }
   }
 
   &__hr {
     height: 1px;
     width: 100%;
     background-color: #757784;
-    margin: 2.9rem 0 4.8rem;
+    margin: 2.9rem 0 1.75rem;
   }
 
   // .footer__policy
   &__policy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    p {
+      color: #757784;
+    }
+
+    a {
+      color: #757784;
+      transition-duration: .2s;
+
+      &:hover {
+        color: white;
+      }
+    }
   }
 }

@@ -1,0 +1,13 @@
+svg {
+  height: 1.86rem !important;
+  width: 1.86rem !important;
+}
+
+.control {
+  fill: #B8BECB;
+  transition-duration: .2s;
+
+  &.act {
+    fill: white;
+  }
+}

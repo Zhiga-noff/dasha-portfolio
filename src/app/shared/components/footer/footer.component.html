@@ -6,13 +6,13 @@
       <li><a href="#">Контакты</a></li>
     </ul>
     <div class="footer__social">
-      <a href="#">
-        <z-telegram-icon/>
-        <span></span>
+      <a href="#" (mouseenter)="tlgMouseIn=true" (mouseleave)="tlgMouseIn=false">
+        <z-telegram-icon [active]="tlgMouseIn"/>
+        <span>Telegram</span>
       </a>
-      <a href="#">
-        <z-vk/>
-        <span></span>
+      <a href="#" (mouseenter)="vkMouseIn=true" (mouseleave)="vkMouseIn=false">
+        <z-vk [active]="vkMouseIn"/>
+        <span>VK.com</span>
       </a>
 
     </div>
@@ -21,7 +21,8 @@
   <div class="footer__hr"></div>
   >
   <div class="footer__policy">
-    <a href=""></a><a href=""></a>
+    <a href="#">Политика конфиденциальности</a>
+    <p>© Copyright, {{actualYear}}</p>
   </div>
 
 </footer>
