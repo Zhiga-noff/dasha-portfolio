@@ -1,3 +1,8 @@
-<article>
-  <h2>В моем портфолио проекты связанные с коммуникационным, графическим и вэб-дизайном</h2>
+<article class="project-types">
+  <h2 class="project-types__title title">В моем портфолио проекты связанные с коммуникационным, графическим и
+    вэб-дизайном</h2>
+  <div class="project-types__grid-container">
+    <z-type *ngFor="let type of types" [type]="type" class="project-types__type"/>
+  </div>
+
 </article>

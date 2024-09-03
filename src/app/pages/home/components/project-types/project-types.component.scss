@@ -1,0 +1,17 @@
+.project-types {
+  padding: 7.1rem 0;
+  max-width: 70rem;
+  margin: 0 auto;
+
+  // .project-types__title
+  &__title {
+    max-width: 42.25rem;
+  }
+
+  &__grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: .5rem;
+  }
+}

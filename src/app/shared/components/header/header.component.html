@@ -5,7 +5,7 @@
          [ngClass]="{act: activeDrop}">
 
       <p>{{activeRoute}}</p>
-      <ul class="header__drop-menu" [ngClass]="{noneAct: activeDrop}">
+      <ul class="header__drop-menu" [ngClass]="{noneAct: !activeDrop}">
         <li *ngFor="let link of menu"
             (click)="setActiveRoute(link.name)"
             [ngClass]="{none: activeRoute === link.name}"

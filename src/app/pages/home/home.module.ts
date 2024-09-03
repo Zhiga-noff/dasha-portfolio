@@ -6,7 +6,7 @@ import { TypeComponent } from './components/project-types/type/type.component';
 
 @NgModule({
   declarations: [MainComponent, ProjectTypesComponent, TypeComponent],
-  exports: [MainComponent],
+  exports: [MainComponent, ProjectTypesComponent],
   imports: [CommonModule],
 })
 export class HomeModule {}
