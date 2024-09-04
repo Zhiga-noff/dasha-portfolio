@@ -8,4 +8,5 @@ import { IProject } from '../../../../../../libs/types/project-types.types';
 })
 export class TypeComponent {
   @Input() type: IProject;
+  @Input() index: number;
 }

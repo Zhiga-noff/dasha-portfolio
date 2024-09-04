@@ -1,1 +1,12 @@
-<p>type works!</p>
+<div class="type-item type-item_{{index+1}} border">
+  <div class="type-item__image" *ngIf="type?.image">
+    <img [src]="type?.image" [alt]="type.description">
+  </div>
+  <div class="type-item__row">
+    <div class="type-item__title">{{type.description}}</div>
+    <div class="type-item__icon" *ngIf="type?.icon">
+      <img [src]="type?.icon" alt="Иконка программы">
+    </div>
+    <small class="type-item__small" *ngIf="type?.small">{{type?.small}}</small>
+  </div>
+</div>

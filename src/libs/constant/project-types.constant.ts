@@ -2,28 +2,28 @@ import { IProject } from '../types/project-types.types';
 
 export const projectTypesConstant: IProject[] = [
   {
-    image: '',
+    image: 'assets/img/home/type-work/fir-style.png',
     description: 'Обновление фирменного стиля компании',
-    icon: '',
+    icon: 'assets/img/home/type-work/icons/illustrator.png',
   },
   {
-    image: '',
+    image: 'assets/img/home/type-work/presentation.png',
     description: 'Презентации',
-    icon: '',
+    icon: 'assets/img/home/type-work/icons/powerpoint.png',
   },
   {
-    image: '',
+    image: 'assets/img/home/type-work/social.png',
     description: 'Оформление социальных сетей',
-    icon: '',
+    icon: 'assets/img/home/type-work/icons/figma.png',
   },
   {
-    image: '',
+    image: 'assets/img/home/type-work/poligrafy.png',
     description: 'Полиграфия',
-    icon: '',
+    icon: 'assets/img/home/type-work/icons/illustrator.png',
   },
   {
-    image: '',
-    description: 'Полиграфия',
+    image: null,
+    description: 'Мерч и стикеры',
     icon: null,
     small: 'Для автоматизации бизнес-процессов и улучшения работы отдела продаж.',
   },

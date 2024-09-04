@@ -1,0 +1,82 @@
+@import "../../../../../../assets/styles/colors";
+
+.type-item {
+  padding: 1.75rem;
+  display: flex;
+  //height: 100%;
+  gap: 2rem;
+  justify-content: space-between;
+
+  // .type-item_{{index}}
+  &_1 {
+    background-color: #FFD3CC;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &_2 {
+    background-color: #DEDEDE;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+
+  &_3 {
+    background-color: $lightBack;
+    flex-direction: row-reverse;
+
+    .type-item__row {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+
+  &_4 {
+    background-color: $lightBack;
+    flex-direction: column-reverse;
+  }
+
+  &_5 {
+    background-color: $lightBack;
+
+    .type-item__row {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: .6rem;
+    }
+  }
+
+  // .type-item__image
+  &__image {
+    img {
+      width: 100%;
+    }
+  }
+
+  // .type-item__row
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  // .type-item__title
+  &__title {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  // .type-item__icon
+  &__icon {
+    max-width: 3.75rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // .type-item__small
+  &__small {
+  }
+}

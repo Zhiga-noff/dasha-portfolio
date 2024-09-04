@@ -1,5 +1,5 @@
 export interface IProject {
-  image: string;
+  image: string | null;
   description: string;
   icon: string | null;
   small?: string;
