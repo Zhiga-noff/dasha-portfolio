@@ -1,0 +1,22 @@
+@import "../../../assets/styles/colors";
+
+.company {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding-bottom: 7.5rem;
+  // .company__title
+  &__title {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  // .company__row
+  &__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+}
+
+

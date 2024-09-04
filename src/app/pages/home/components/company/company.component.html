@@ -1,0 +1,13 @@
+<div class="company__item border" [ngClass]="{'company__item_back':back}">
+  <div class="company__image">
+    <img [src]="item.image" [alt]="item.name">
+  </div>
+  <div class="company__info">
+    <div class="company__logo" *ngIf="item.logo">
+      <img [src]="item.logo" [alt]="item.name">
+    </div>
+    <h3 class="company__title" *ngIf="!item.logo">{{item.name}}</h3>
+    <p class="company__description" *ngFor="let desc of item.description">{{desc}}</p>
+    <button class="btn" [routerLink]="item.route">Подробнее</button>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+@import "../../../../../assets/styles/colors";
+
+.company {
+
+  &__item {
+    background-color: $grey;
+    display: flex;
+    padding: 2rem;
+
+    &_back {
+      background-color: $lightBack;
+    }
+  }
+
+  // .company__image
+  &__image {
+    max-height: 20rem;
+
+    img {
+      height: 100%;
+    }
+  }
+
+  // .company__info
+  &__info {
+  }
+
+  // .company__logo
+  &__logo {
+  }
+
+  // .company__title
+  &__title {
+  }
+
+  // .company__description
+  &__description {
+  }
+}
+
+
+
