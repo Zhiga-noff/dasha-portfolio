@@ -1,0 +1,91 @@
+@import "../../../../../assets/styles/colors";
+
+.achievements {
+  padding: 11.5rem 0;
+  // .achievements__title
+  &__title {
+    max-width: 55rem;
+    font-size: 5.3rem;
+    text-align: center;
+    margin: 0 auto 5.8rem;
+    color: #B8BECB;
+
+    span {
+      color: $text;
+    }
+  ;
+  }
+
+  // .achievements__row
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .achievements__subtitle
+  &__subtitle {
+    max-width: 26rem;
+  }
+
+  // .achievements__mosaic
+  &__mosaic {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 50%;
+    gap: .5rem;
+  }
+
+  // .achievements__item
+  &__item {
+    flex: 1 1 45%;
+    height: 14rem;
+    position: relative;
+    padding: 1.5rem;
+    background-color: $lightBack;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    // .achievements__item_{{index+1}}
+    &_1 {
+      top: 4rem;
+    }
+
+    &_3 {
+      top: 4rem;
+
+      .achievements__image {
+        right: 0;
+        left: 2rem;
+      }
+    }
+
+  }
+
+  // .achievements__result
+  &__result {
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  // .achievements__description
+  &__description {
+    font-size: .75rem;
+  }
+
+  // .achievements__image
+  &__image {
+    position: absolute;
+    max-width: 7.5rem;
+    top: 1rem;
+    right: 2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+
+}
+

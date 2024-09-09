@@ -1,0 +1,19 @@
+<article class="achievements container">
+  <h2 class="achievements__title">
+    Работаю <span>с большими компаниями</span> и амбициозными стартапами
+  </h2>
+  <div class="achievements__row">
+    <h3 class="achievements__subtitle title">Несколько фактов обо мне и моем опыте</h3>
+    <div class="achievements__mosaic">
+      <div class="achievements__item achievements__item_{{index+1}} border"
+           *ngFor="let achieve of achievements; let index=index">
+        <span *ngIf="achieve.spanText">{{achieve.spanText}}</span>
+        <p class="achievements__result" *ngIf="achieve.result">{{achieve.result}}</p>
+        <p class="achievements__description">{{achieve.description}}</p>
+        <div class="achievements__image" *ngIf="achieve.image">
+          <img [src]="achieve.image" alt="Иконка">
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
