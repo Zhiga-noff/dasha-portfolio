@@ -1,0 +1,41 @@
+@import "../../../../assets/styles/colors";
+
+.form {
+  background-color: $lightBack;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+
+  padding: 4rem;
+  margin-bottom: .5rem;
+  // .form__title
+  &__title {
+  }
+
+  // .form__form
+  &__form {
+  }
+
+  // .form__row
+  &__row {
+  }
+
+  // .form__left-info
+  &__left-info {
+  }
+
+  // .form__input
+  &__input {
+  }
+
+  // .form__text
+  &__text {
+  }
+
+  // .form__personal-data
+  &__personal-data {
+  }
+
+  // .form__btn
+  &__btn {
+  }
+}

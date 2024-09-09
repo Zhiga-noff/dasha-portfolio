@@ -7,10 +7,17 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
 import { TelegramIconComponent } from './footer/telegram-icon/telegram-icon.component';
 import { VkComponent } from './footer/vk/vk.component';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   imports: [SharedModule, CommonModule, ReactiveFormsModule, RouterLink],
-  exports: [SharedModule, HeaderComponent, FooterComponent],
-  declarations: [HeaderComponent, FooterComponent, TelegramIconComponent, VkComponent],
+  exports: [SharedModule, HeaderComponent, FooterComponent, FormComponent],
+  declarations: [
+    HeaderComponent,
+    FooterComponent,
+    TelegramIconComponent,
+    VkComponent,
+    FormComponent,
+  ],
 })
 export class ComponentsModule {}
