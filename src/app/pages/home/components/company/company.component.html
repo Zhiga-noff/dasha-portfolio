@@ -1,5 +1,5 @@
 <div class="company__item border" [ngClass]="{'company__item_back':back}">
-  <div class="company__image">
+  <div class="company__image" [ngClass]="{phone: item.name === 'Neoflex'}">
     <img [src]="item.image" [alt]="item.name">
   </div>
   <div class="company__info">

@@ -6,6 +6,7 @@
     background-color: $grey;
     display: flex;
     padding: 2rem;
+    justify-content: space-between;
 
     &_back {
       background-color: $lightBack;
@@ -15,26 +16,39 @@
   // .company__image
   &__image {
     max-height: 20rem;
+    max-width: 20rem;
 
     img {
       height: 100%;
+      //width: 100%;
+      object-fit: contain;
+    }
+
+    &.phone {
+      margin-left: 3rem;
     }
   }
 
   // .company__info
   &__info {
+    align-self: center;
+    flex: 0 0 50%;
   }
 
   // .company__logo
   &__logo {
+    margin-bottom: 2rem;
   }
 
   // .company__title
   &__title {
+    margin-bottom: 1rem;
   }
 
   // .company__description
   &__description {
+    margin-bottom: 2rem;
+    max-width: 29rem;
   }
 }
 
