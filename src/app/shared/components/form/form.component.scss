@@ -9,30 +9,127 @@
   margin-bottom: .5rem;
   // .form__title
   &__title {
+    font-size: 5.3rem;
+    margin-bottom: 3rem;
   }
 
   // .form__form
   &__form {
+    background-color: white;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    padding: 2rem;
   }
 
   // .form__row
   &__row {
+    display: flex;
+    gap: 3rem;
+    align-items: stretch;
+    margin-bottom: 2rem;
+    justify-content: space-between;
+
+    &:last-child {
+      align-items: center;
+      margin-bottom: 0;
+    }
   }
 
   // .form__left-info
   &__left-info {
+    flex: 1 1 70%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
   }
 
   // .form__input
   &__input {
+    background-color: $lightBack;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+
+    font-size: 1rem;
+
+    &::placeholder {
+      font-size: 1rem;
+      color: $text;
+    }
   }
 
   // .form__text
   &__text {
+    flex: 1 1 30%;
+
+    background-color: $lightBack;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    resize: none;
+
+    font-size: 1rem;
+
+    &::placeholder {
+      font-size: 1rem;
+      color: $text;
+    }
+
   }
 
   // .form__personal-data
   &__personal-data {
+
+    input {
+      display: none;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      position: relative;
+      font-size: .6rem;
+      cursor: pointer;
+
+      &::before {
+        content: '';
+        height: 1rem;
+        width: 1rem;
+        border-radius: .15rem;
+        border: 1px solid $lightBack;
+        margin-right: .5rem;
+        transition-duration: .3s;
+      }
+
+      &::after {
+        position: absolute;
+        background-image: url("../../../../assets/img/check.png");
+        background-repeat: no-repeat;
+        top: .15rem;
+        left: .15rem;
+        content: '';
+        height: 1rem;
+        width: 1rem;
+        border-radius: .15rem;
+        margin-right: .5rem;
+        opacity: 0;
+        transition-duration: .3s;
+      }
+    }
+
+    input:checked + label::before {
+      background-color: $btn;
+    }
+
+    input:checked + label::after {
+      opacity: 1;
+    }
+
+
+    a {
+      color: $btn;
+    }
   }
 
   // .form__btn
