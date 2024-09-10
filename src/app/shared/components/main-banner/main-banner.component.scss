@@ -1,0 +1,30 @@
+@import "../../../../assets/styles/colors";
+
+.main-banner {
+  padding: 10.4rem 4rem 3rem;
+  background-color: $lightBack;
+  // .main-banner__titles
+  &__titles {
+  }
+
+  // .main-banner__logo
+  &__logo {
+    max-width: 25rem;
+    margin-bottom: 2rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // .main-banner__subtitle
+  &__subtitle {
+    font-size: 1rem;
+    max-width: 37rem;
+  }
+
+  // .main-banner__title
+  &__title {
+    margin-bottom: 2rem;
+  }
+}

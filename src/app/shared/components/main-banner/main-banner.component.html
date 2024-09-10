@@ -1,0 +1,12 @@
+<article class="main-banner border">
+  <div class="main-banner__titles">
+    <div class="main-banner__logo" *ngIf="data.logo; else titleBanner">
+      <img [src]="data.logo" [alt]="data.name">
+    </div>
+    <h2 class="main-banner__subtitle">{{data.description}}</h2>
+  </div>
+</article>
+
+<ng-template #titleBanner>
+  <h1 class="main-banner__title title">{{data.name}}</h1>
+</ng-template>

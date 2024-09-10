@@ -8,16 +8,30 @@ import { RouterLink } from '@angular/router';
 import { TelegramIconComponent } from './footer/telegram-icon/telegram-icon.component';
 import { VkComponent } from './footer/vk/vk.component';
 import { FormComponent } from './form/form.component';
+import { MainBannerComponent } from './main-banner/main-banner.component';
+import { ItemListLgComponent } from './ui/item-list-lg/item-list-lg.component';
+import { ItemListMdComponent } from './ui/item-list-md/item-list-md.component';
 
 @NgModule({
   imports: [SharedModule, CommonModule, ReactiveFormsModule, RouterLink],
-  exports: [SharedModule, HeaderComponent, FooterComponent, FormComponent],
+  exports: [
+    SharedModule,
+    HeaderComponent,
+    FooterComponent,
+    FormComponent,
+    MainBannerComponent,
+    ItemListMdComponent,
+    ItemListLgComponent,
+  ],
   declarations: [
     HeaderComponent,
     FooterComponent,
     TelegramIconComponent,
     VkComponent,
     FormComponent,
+    MainBannerComponent,
+    ItemListLgComponent,
+    ItemListMdComponent,
   ],
 })
 export class ComponentsModule {}

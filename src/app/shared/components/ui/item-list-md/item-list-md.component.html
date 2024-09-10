@@ -1,0 +1,11 @@
+<article class="works border" [ngClass]="{darkBack: data.background==='grey'}">
+  <div class="container">
+    <h2 class="works__title title">{{data.title}}</h2>
+    <div class="works__tablet">
+      <div class="works__item" *ngFor="let src of visibleContent">
+        <img [src]="src" [alt]="data.title">
+      </div>
+    </div>
+    <button class="works__btn btn" *ngIf="!(data.works.length === visibleContent.length)">Показать еще</button>
+  </div>
+</article>
