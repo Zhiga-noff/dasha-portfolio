@@ -3,6 +3,13 @@ import { mailingNeoflexConstant } from './neoflex/mailing-neoflex.constant';
 import { presentationNeoflexConstant } from './neoflex/presentation-neoflex.constant';
 import { welcomePackNeoflexConstant } from './neoflex/welcome-pack-neoflex.constant';
 import { landingNeoflexConstant } from './neoflex/landing-neoflex.constant';
+import { mailingProfitConstant } from './profit/mailing-profit.constant';
+import { poligraphyProfitConstant } from './profit/poligraphy-profit.constant';
+import { presentationProfitConstant } from './profit/presentation-profit.constant';
+import { firStyleCodexpertConstant } from './codexpert/fir-style-codexpert.constant';
+import { mailingCodexpertConstant } from './codexpert/mailing-codexpert.constant';
+import { presentationCodexpertConstant } from './codexpert/presentation-codexpert.constant';
+import { poligraphyCodexpertConstant } from './codexpert/poligraphy-codexpert.constant';
 
 export const bannerInfoConstant: ICompanyPages = {
   neoflex: {
@@ -24,6 +31,9 @@ export const bannerInfoConstant: ICompanyPages = {
       description:
         'Занималась оформлением постов для социальных сетей и внутренних коммуникаций, презентаций, макетов для digital, версткой и подготовкой к печати дизайн-макетов по техническим требованиям.',
     },
+    mailing: mailingProfitConstant,
+    poligraphy: poligraphyProfitConstant,
+    presentation: presentationProfitConstant,
   },
   codexpert: {
     banner: {
@@ -32,6 +42,10 @@ export const bannerInfoConstant: ICompanyPages = {
       description:
         'Занималась оформлением гайдбука, постов для социальных сетей и внутренних коммуникаций, презентаций, макетов для digital, версткой и подготовкой к печати дизайн-макетов по техническим требованиям.',
     },
+    firStyle: firStyleCodexpertConstant,
+    mailing: mailingCodexpertConstant,
+    presentation: presentationCodexpertConstant,
+    poligraphy: poligraphyCodexpertConstant,
   },
   otherProjects: {
     banner: {

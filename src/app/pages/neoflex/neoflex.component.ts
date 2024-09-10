@@ -10,9 +10,7 @@ import { IItemList } from '../../../libs/types/pages/item-list.types';
 export class NeoflexComponent implements OnInit {
   protected pagesName = bannerInfoConstant.neoflex;
   protected banner = this.pagesName.banner;
-  protected worksKeys = Object.keys(bannerInfoConstant.neoflex).filter(
-    (item) => item !== 'banner',
-  );
+  protected worksKeys = Object.keys(this.pagesName).filter((item) => item !== 'banner');
 
   protected worksItems: IItemList[] = [];
 
