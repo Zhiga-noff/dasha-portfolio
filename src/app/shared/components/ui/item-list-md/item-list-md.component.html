@@ -6,6 +6,9 @@
         <img [src]="src" [alt]="data.title">
       </div>
     </div>
-    <button class="works__btn btn" *ngIf="!(data.works.length === visibleContent.length)">Показать еще</button>
+    <button class="works__btn btn" *ngIf="!(data.works.length === visibleContent.length)"
+            (click)="showMoreWorks()"
+    >Показать еще
+    </button>
   </div>
 </article>

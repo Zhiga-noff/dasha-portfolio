@@ -17,4 +17,12 @@ export class ItemListMdComponent implements OnInit {
       this.visibleContent.push(...this.data.works);
     }
   }
+
+  showMoreWorks() {
+    const addingElements = this.data.works.slice(
+      this.visibleContent.length - 1,
+      this.visibleContent.length + 1,
+    );
+    this.visibleContent.push(...addingElements);
+  }
 }
