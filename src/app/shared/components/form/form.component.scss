@@ -54,7 +54,12 @@
 
     &::placeholder {
       font-size: 1rem;
-      color: $text;
+      color: #a0a0a0;
+    }
+
+    &.invalid {
+      border: 1px solid #FF7575;
+      box-shadow: 0 0px 20px 0px rgba(255, 117, 117, .5);
     }
   }
 
@@ -73,8 +78,9 @@
 
     &::placeholder {
       font-size: 1rem;
-      color: $text;
+      color: #a0a0a0;
     }
+
 
   }
 
@@ -134,5 +140,14 @@
 
   // .form__btn
   &__btn {
+
+    &:disabled {
+      opacity: .4;
+      cursor: auto;
+
+      &:hover {
+        background-color: $btn;
+      }
+    }
   }
 }

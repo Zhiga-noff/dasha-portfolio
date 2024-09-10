@@ -1,18 +1,22 @@
 <article class="form border">
   <h2 class="form__title">Связаться</h2>
-  <form action="#" class="form__form border">
+  <form action="#" class="form__form border" [formGroup]="form" (ngSubmit)="submit()">
     <div class="form__row">
       <div class="form__left-info">
-        <input type="text" name="name" placeholder="ФИО" class="form__input"/>
-        <input type="tel" name="phone" placeholder="Телефон" class="form__input"/>
-        <input type="email" name="email" placeholder="E-mail" class="form__input"/>
+        <input type="text" name="name" placeholder="ФИО" class="form__input" formControlName="name"
+               [ngClass]="{invalid: form.get('name').touched && form.get('name').invalid}"/>
+        <input type="tel" name="phone" placeholder="Телефон" class="form__input" formControlName="phone"
+               (input)="formatPhoneNumber()"
+               [ngClass]="{invalid: form.get('phone').touched && form.get('phone').invalid}"/>
+        <input type="email" name="email" placeholder="E-mail" class="form__input" formControlName="email"
+               [ngClass]="{invalid: form.get('email').touched && form.get('email').invalid}"/>
       </div>
-      <textarea placeholder="Комментарий" class="form__text"></textarea>
+      <textarea placeholder="Комментарий" class="form__text" formControlName="comments"></textarea>
     </div>
     <div class="form__row">
       <div class="form__personal-data">
         <input type="checkbox" name="" id="personal-data"/>
-        <label for="personal-data">
+        <label for="personal-data" (click)="setApprove()">
         <span>
           Нажимая на кнопку, вы даёте согласие на
           <a href="">обработку персональных данных</a>
@@ -20,7 +24,7 @@
         </label>
       </div>
 
-      <button class="form__btn btn">Отправить заявку <span>></span></button>
+      <button class="form__btn btn" [disabled]="form.invalid || !approval">Отправить заявку <span> → </span></button>
     </div>
 
   </form>

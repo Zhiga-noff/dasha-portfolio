@@ -6,11 +6,10 @@
   require 'phpmailer/src/PHPMailer.php';
 
   // Получаем данные из POST-запроса
-  $nameUser = $_POST['nameClient'];
-  $companyName = $_POST['company'];
+  $nameUser = $_POST['name'];
   $email = $_POST['email'];
-  $phone = $_POST['phoneClient'];
-  $service = $_POST['service'];
+  $phone = $_POST['phone'];
+  $service = $_POST['comments'];
 
   $mail = new PHPMailer(true);
   $mail->CharSet = 'UTF-8';
@@ -18,7 +17,7 @@
   $mail->IsHTML(true);
 
   // Измени адрес отправителя и имя отправителя согласно своим предпочтениям
-  $mail->setFrom('info@zhiganoff.com', 'Сайт Zhiga_noff');
+  $mail->setFrom('info@zhiganova.com', 'Сайт Zhiganova');
 
   // Замени адрес получателя на тот, куда ты хочешь получать электронные письма
   $mail->addAddress('zhiganov_k.n@mail.ru');
@@ -29,10 +28,9 @@
   // Формируем тело письма
   $body = '<h1>Данные из формы</h1>';
   $body .= '<p>Имя пользователя: ' . htmlspecialchars($nameUser) . '</p>';
-  $body .= '<p>Название компании: ' . htmlspecialchars($companyName) . '</p>';
   $body .= '<p>Email: ' . htmlspecialchars($email) . '</p>';
   $body .= '<p>Телефон: ' . htmlspecialchars($phone) . '</p>';
-  $body .= '<p>Услуга: ' . htmlspecialchars($service) . '</p>';
+  $body .= '<p>Комментарий: ' . htmlspecialchars($service) . '</p>';
 
   $mail->Body = $body;
 
