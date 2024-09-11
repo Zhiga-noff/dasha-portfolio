@@ -20,4 +20,8 @@ export const menu: IMenu[] = [
     name: 'Codexpert',
     link: '/codexpert',
   },
+  {
+    name: 'Разное',
+    link: '/other-project',
+  },
 ];

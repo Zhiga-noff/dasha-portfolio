@@ -1,7 +1,7 @@
 @import "../../../../assets/styles/colors";
 
 .header {
-  position: fixed;
+  position: absolute;
   background-color: $lightBack;
   width: calc(100% - 2rem);
   padding: 1.25rem 4.15rem;
