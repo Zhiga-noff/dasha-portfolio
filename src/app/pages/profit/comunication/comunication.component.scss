@@ -1,0 +1,35 @@
+.comunication {
+  padding: 5rem 0;
+  // .comunication__title
+  &__title {
+    margin-bottom: 5.8rem;
+  }
+
+  // .comunication__table-lg
+  &__table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &_sm {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  // .comunication__item
+  &__item {
+    border-radius: 1rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  // .comunication__table-sm
+}

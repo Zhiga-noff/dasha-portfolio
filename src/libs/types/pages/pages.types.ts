@@ -12,3 +12,10 @@ export interface IBannerInfo {
   logo: string | null;
   description: string;
 }
+
+export interface IComunicationHR {
+  title: string;
+  sizeLG: string[];
+  sizeMD: string[];
+  sizeSM: string[];
+}

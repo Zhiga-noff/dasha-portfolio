@@ -13,6 +13,7 @@ import { CodexpertComponent } from './pages/codexpert/codexpert.component';
 import { OtherComponent } from './pages/other/other.component';
 import { PostNeoflexComponent } from './pages/neoflex/post-neoflex/post-neoflex.component';
 import { PostProfitComponent } from './pages/profit/post-profit/post-profit.component';
+import { ComunicationComponent } from './pages/profit/comunication/comunication.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { PostProfitComponent } from './pages/profit/post-profit/post-profit.comp
     OtherComponent,
     PostNeoflexComponent,
     PostProfitComponent,
+    ComunicationComponent,
   ],
   imports: [
     BrowserModule,

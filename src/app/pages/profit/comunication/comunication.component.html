@@ -1,0 +1,21 @@
+<article class="comunication">
+  <div class="container">
+    <h2 class="comunication__title title">{{data.title}}</h2>
+    <div class="comunication__table comunication__table_lg">
+      <div class="comunication__item" *ngFor="let src of data.sizeLG">
+        <img [src]="src" [alt]="data.title">
+      </div>
+    </div>
+    <div class="comunication__table comunication__table_sm">
+      <div class="comunication__item" *ngFor="let src of data.sizeSM">
+        <img [src]="src" [alt]="data.title">
+      </div>
+    </div>
+    <div class="comunication__table comunication__table_lg">
+      <div class="comunication__item" *ngFor="let src of data.sizeMD">
+        <img [src]="src" [alt]="data.title">
+      </div>
+    </div>
+
+  </div>
+</article>

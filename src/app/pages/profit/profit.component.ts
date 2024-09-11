@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { bannerInfoConstant } from '../../../libs/constant/pages/banner-info.constant';
 import { IItemList } from '../../../libs/types/pages/item-list.types';
+import { IComunicationHR } from '../../../libs/types/pages/pages.types';
 
 const post: IItemList = {
   title: 'Оформление постов',
@@ -22,6 +23,27 @@ const post: IItemList = {
   size: 'md',
 };
 
+const hrComunication: IComunicationHR = {
+  title: 'Внутринние коммуникации, взаимодействие  с HR отделом',
+  sizeLG: [
+    'assets/img/pages/profit/comunication/comunication-lg_01.jpg',
+    'assets/img/pages/profit/comunication/comunication-lg_02.jpg',
+    'assets/img/pages/profit/comunication/comunication-lg_03.jpg',
+    'assets/img/pages/profit/comunication/comunication-lg_04.jpg',
+    'assets/img/pages/profit/comunication/comunication-lg_05.jpg',
+    'assets/img/pages/profit/comunication/comunication-lg_06.jpg',
+  ],
+  sizeMD: [
+    'assets/img/pages/profit/comunication/comunication-md_01.jpg',
+    'assets/img/pages/profit/comunication/comunication-md_02.jpg',
+  ],
+  sizeSM: [
+    'assets/img/pages/profit/comunication/comunication-sm_01.jpg',
+    'assets/img/pages/profit/comunication/comunication-sm_02.jpg',
+    'assets/img/pages/profit/comunication/comunication-sm_03.jpg',
+  ],
+};
+
 @Component({
   selector: 'z-profit',
   templateUrl: './profit.component.html',
@@ -35,6 +57,7 @@ export class ProfitComponent implements OnInit {
   protected worksItems: IItemList[] = [];
 
   protected posts: IItemList = post;
+  protected comunication: IComunicationHR = hrComunication;
 
   ngOnInit() {
     this.worksKeys.forEach((key) => {
