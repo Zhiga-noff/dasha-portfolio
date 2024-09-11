@@ -10,6 +10,7 @@ import { firStyleCodexpertConstant } from './codexpert/fir-style-codexpert.const
 import { mailingCodexpertConstant } from './codexpert/mailing-codexpert.constant';
 import { presentationCodexpertConstant } from './codexpert/presentation-codexpert.constant';
 import { poligraphyCodexpertConstant } from './codexpert/poligraphy-codexpert.constant';
+import { otherMaterialsConstant } from './other-projects/other-materials.constant';
 
 export const bannerInfoConstant: ICompanyPages = {
   neoflex: {
@@ -54,5 +55,6 @@ export const bannerInfoConstant: ICompanyPages = {
       description:
         'Занималась оформлением гайдбука, постов для социальных сетей и внутренних коммуникаций, презентаций, макетов для digital, версткой и подготовкой к печати дизайн-макетов по техническим требованиям.',
     },
+    materials: otherMaterialsConstant,
   },
 };

@@ -1,1 +1,8 @@
-<p>other works!</p>
+<z-main-banner [data]="banner"/>
+<ng-container *ngFor="let item of worksItems">
+  <z-item-list-md [data]="item" *ngIf="item.size==='md'; else lgItem"/>
+
+  <ng-template #lgItem>
+    <z-item-list-lg [data]="item"/>
+  </ng-template>
+</ng-container>
