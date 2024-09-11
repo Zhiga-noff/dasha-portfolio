@@ -20,8 +20,8 @@ export class ItemListMdComponent implements OnInit {
 
   showMoreWorks() {
     const addingElements = this.data.works.slice(
-      this.visibleContent.length - 1,
-      this.visibleContent.length + 1,
+      this.visibleContent.length,
+      this.visibleContent.length + 2,
     );
     this.visibleContent.push(...addingElements);
   }

@@ -2,9 +2,13 @@
   <div class="container">
     <h2 class="post-profit__title title">{{data.title}}</h2>
     <div class="post-profit__table">
-      <div class="post-profit__item" *ngFor="let src of data.works">
+      <div class="post-profit__item" *ngFor="let src of visibleContent">
         <img [src]="src" [alt]="data.title">
       </div>
     </div>
+
+    <button class="post-profit__btn btn" *ngIf="!(data.works.length === visibleContent.length)"
+            (click)="showMoreWorks()">Посмотреть еще
+    </button>
   </div>
 </article>
