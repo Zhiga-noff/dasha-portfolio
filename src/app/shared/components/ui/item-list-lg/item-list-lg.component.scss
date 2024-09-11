@@ -1,0 +1,17 @@
+.works-lg {
+  padding: 5rem 0;
+  // .works-lg__title
+  &__title {
+    margin-bottom: 5.8rem;
+  }
+
+  // .works-lg__item
+  &__item {
+    overflow: hidden;
+    margin-bottom: 3rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

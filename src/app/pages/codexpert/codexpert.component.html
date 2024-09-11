@@ -3,7 +3,7 @@
   <z-item-list-md [data]="item" *ngIf="item.size==='md'; else lgItem"/>
 
   <ng-template #lgItem>
-    <z-item-list-lg></z-item-list-lg>
+    <z-item-list-lg [data]="item"/>
   </ng-template>
 </ng-container>
 

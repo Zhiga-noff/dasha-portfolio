@@ -1,0 +1,11 @@
+<article class="post-neoflex">
+  <div class="container">
+    <h2 class="post-neoflex__title title">{{data.title}}</h2>
+    <div class="post-neoflex__table">
+      <div class="post-neoflex__item" *ngFor="let src of data.works; let i = index"
+           [ngClass]="{spanItem: i+1 >= data.works.length-1}">
+        <img [src]="src" [alt]="data.title"/>
+      </div>
+    </div>
+  </div>
+</article>
