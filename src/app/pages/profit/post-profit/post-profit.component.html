@@ -1,0 +1,10 @@
+<article class="post-profit">
+  <div class="container">
+    <h2 class="post-profit__title title">{{data.title}}</h2>
+    <div class="post-profit__table">
+      <div class="post-profit__item" *ngFor="let src of data.works">
+        <img [src]="src" [alt]="data.title">
+      </div>
+    </div>
+  </div>
+</article>

@@ -2,7 +2,7 @@ import { IItemList } from '../../../types/pages/item-list.types';
 
 export const mailingProfitConstant: IItemList = {
   title: 'Оформление mail рассылок',
-  background: 'white',
+  background: 'grey',
   works: [
     'assets/img/pages/profit/mailing/mailing_01.jpg',
     'assets/img/pages/profit/mailing/mailing_02.jpg',

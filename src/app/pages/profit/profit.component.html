@@ -1,4 +1,5 @@
 <z-main-banner [data]="banner"/>
+<z-post-profit [data]="posts"/>
 <ng-container *ngFor="let item of worksItems">
   <z-item-list-md [data]="item" *ngIf="item.size==='md'; else lgItem"/>
 
