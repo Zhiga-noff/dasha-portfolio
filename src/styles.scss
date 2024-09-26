@@ -30,6 +30,7 @@ body {
   font-weight: 400;
   padding: 1rem;
   color: $text;
+  //overflow-x: hidden;
 
   @media screen and (max-width: 992px) {
     padding: .83rem;
@@ -72,4 +73,8 @@ body {
 .container {
   max-width: 70rem;
   margin: 0 auto;
+
+  @media screen and (max-width: 992px) {
+    width: 100%;
+  }
 }
