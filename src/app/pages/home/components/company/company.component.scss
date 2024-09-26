@@ -8,6 +8,10 @@
     padding: 2rem;
     justify-content: space-between;
 
+    @media screen and (max-width: 992px) {
+      padding: 1rem;
+    }
+
     &_back {
       background-color: $lightBack;
     }
@@ -17,15 +21,29 @@
   &__image {
     max-height: 20rem;
     max-width: 20rem;
+    @media screen and (max-width: 992px) {
+      max-width: 10.5rem;
+      display: flex;
+      margin-right: 1rem;
+    }
 
     img {
       height: 100%;
       //width: 100%;
       object-fit: contain;
+
+      @media screen and (max-width: 992px) {
+        height: auto;
+        width: 100%;
+        align-items: center;
+      }
     }
 
     &.phone {
       margin-left: 3rem;
+      @media screen and (max-width: 992px) {
+        margin-left: 0;
+      }
     }
   }
 
@@ -33,6 +51,9 @@
   &__info {
     align-self: center;
     flex: 0 0 50%;
+    @media screen and (max-width: 992px) {
+      flex: auto;
+    }
   }
 
   // .company__logo
@@ -43,6 +64,10 @@
   // .company__title
   &__title {
     margin-bottom: 1rem;
+
+    @media screen and (max-width: 992px) {
+      flex: auto;
+    }
   }
 
   // .company__description

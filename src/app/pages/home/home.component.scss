@@ -2,10 +2,20 @@
 
 .company {
   padding-top: 7.5rem;
+
+
+  @media screen and (max-width: 992px) {
+    padding-top: 3rem;
+  }
   // .company__title
   &__title {
     text-align: center;
     margin-bottom: 3rem;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 2rem;
+      text-align: left;
+    }
   }
 
   // .company__row

@@ -2,6 +2,10 @@
 
 .achievements {
   padding: 11.5rem 0;
+
+  @media screen and (max-width: 992px) {
+    padding: 3rem 0;
+  }
   // .achievements__title
   &__title {
     max-width: 55rem;
@@ -10,10 +14,17 @@
     margin: 0 auto 5.8rem;
     color: #B8BECB;
 
+    @media screen and (max-width: 992px) {
+      text-align: left;
+      font-size: 2.6rem;
+      color: $text;
+      margin-bottom: 1.75rem;
+    }
+
     span {
       color: $text;
     }
-  ;
+
   }
 
   // .achievements__row
@@ -21,11 +32,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+
+    }
+
   }
 
   // .achievements__subtitle
   &__subtitle {
     max-width: 26rem;
+    @media screen and (max-width: 992px) {
+      max-width: none;
+      font-size: 1.5rem;
+      margin-bottom: 1.75rem;
+    }
+
   }
 
   // .achievements__mosaic
@@ -34,6 +56,12 @@
     flex-wrap: wrap;
     flex: 0 0 50%;
     gap: .5rem;
+    @media screen and (max-width: 992px) {
+      flex: auto;
+      column-gap: .5rem;
+    }
+
+
   }
 
   // .achievements__item
@@ -48,12 +76,24 @@
     flex-direction: column;
     justify-content: flex-end;
     // .achievements__item_{{index+1}}
+    @media screen and (max-width: 992px) {
+      height: 12rem;
+      padding: 1rem;
+    }
+
+
     &_1 {
       top: 4rem;
+      @media screen and (max-width: 992px) {
+        top: auto;
+      }
     }
 
     &_3 {
       top: 4rem;
+      @media screen and (max-width: 992px) {
+        top: auto;
+      }
 
       .achievements__image {
         right: 0;
@@ -67,6 +107,10 @@
   &__result {
     font-size: 5rem;
     font-weight: 500;
+    @media screen and (max-width: 992px) {
+      font-size: 4.5rem;
+    }
+
   }
 
   // .achievements__description
@@ -80,6 +124,13 @@
     max-width: 7.5rem;
     top: 1rem;
     right: 2rem;
+
+    @media screen and (max-width: 992px) {
+      max-width: 6.2rem;
+      top: .5rem;
+      right: 1rem;
+    }
+
 
     img {
       width: 100%;
