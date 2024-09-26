@@ -7,6 +7,11 @@
   padding: 1.25rem 4.15rem;
   z-index: 10;
 
+  @media screen and (max-width: 992px) {
+    width: calc(100% - 1.66rem);
+    padding: 2rem 1.5rem;
+  }
+
 
   // .header__nav
   &__nav {
@@ -23,12 +28,22 @@
     position: relative;
     padding-right: 1rem;
 
+    @media screen and (max-width: 992px) {
+      margin: 0;
+
+    }
+
 
     p {
       position: relative;
       width: 100%;
       transition-duration: .2s;
       z-index: 2;
+
+
+      @media screen and (max-width: 992px) {
+        width: 8.2rem;
+      }
 
       &::before, &::after {
         content: '';
@@ -83,6 +98,7 @@
     padding: 1rem;
     border-radius: 1rem;
 
+
     &.noneAct {
       height: 0;
       opacity: 0;
@@ -111,9 +127,16 @@
       }
     }
   }
+
+  &__btn {
+    position: relative;
+    z-index: 2;
+
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+
 }
 
-.btn {
-  position: relative;
-  z-index: 2;
-}
+
