@@ -7,10 +7,18 @@
 
   padding: 4rem;
   margin-bottom: .5rem;
+
+  @media screen and (max-width: 992px) {
+    padding: 3rem 1rem;
+  }
   // .form__title
   &__title {
     font-size: 5.3rem;
     margin-bottom: 3rem;
+
+    @media screen and (max-width: 992px) {
+      font-size: 2.6rem;
+    }
   }
 
   // .form__form
@@ -19,6 +27,10 @@
     border-top-right-radius: 0;
     border-top-left-radius: 0;
     padding: 2rem;
+
+    @media screen and (max-width: 992px) {
+      padding: 2.5rem 1rem;
+    }
   }
 
   // .form__row
@@ -28,6 +40,11 @@
     align-items: stretch;
     margin-bottom: 2rem;
     justify-content: space-between;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+      gap: 2rem;
+    }
 
     &:last-child {
       align-items: center;
@@ -41,6 +58,9 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+    @media screen and (max-width: 992px) {
+      flex: auto;
+    }
   }
 
   // .form__input
@@ -75,6 +95,10 @@
     resize: none;
 
     font-size: 1rem;
+
+    @media screen and (max-width: 992px) {
+      flex: 1 1 10.5rem;
+    }
 
     &::placeholder {
       font-size: 1rem;
