@@ -8,6 +8,6 @@
     </div>
     <h3 class="company__title" *ngIf="!item.logo">{{item.name}}</h3>
     <p class="company__description" *ngFor="let desc of item.description">{{desc}}</p>
-    <button class="btn" [routerLink]="item.route" (click)="clickToBtn()">Подробнее</button>
+    <button class="btn company__btn" [routerLink]="item.route" (click)="clickToBtn()">Подробнее</button>
   </div>
 </div>

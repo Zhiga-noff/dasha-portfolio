@@ -12,6 +12,12 @@
     @media screen and (max-width: 992px) {
       padding: 3rem 1rem;
     }
+
+    @media screen and (max-width: 992px) {
+      .works__tablet {
+        grid-template-columns: 1fr;
+      }
+    }
   }
 
   // .works__title
@@ -40,6 +46,10 @@
     border-radius: 1rem;
     @media screen and (max-width: 992px) {
       border-radius: .4rem;
+    }
+
+    @media screen and (max-width: 639px) {
+      border-radius: .7rem;
     }
 
     img {

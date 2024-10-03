@@ -3,9 +3,15 @@ svg {
   width: 1.86rem !important;
 }
 
+
 .control {
   fill: #B8BECB;
   transition-duration: .2s;
+
+  @media screen and (max-width: 639px) {
+    max-width: 1.86rem !important;
+    max-height: 1.86rem !important;
+  }
 
   &.act {
     fill: white;

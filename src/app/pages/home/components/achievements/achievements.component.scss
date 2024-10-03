@@ -21,6 +21,11 @@
       margin-bottom: 1.75rem;
     }
 
+    @media screen and (max-width: 639px) {
+      font-size: 1.7rem;
+    }
+
+
     span {
       color: $text;
     }
@@ -34,7 +39,10 @@
     align-items: center;
     @media screen and (max-width: 992px) {
       flex-direction: column;
+    }
 
+    @media screen and (max-width: 639px) {
+      align-items: stretch;
     }
 
   }
@@ -47,6 +55,10 @@
       font-size: 1.5rem;
       margin-bottom: 1.75rem;
     }
+    @media screen and (max-width: 639px) {
+      font-size: 1rem;
+    }
+
 
   }
 
@@ -79,6 +91,10 @@
     @media screen and (max-width: 992px) {
       height: 12rem;
       padding: 1rem;
+    }
+
+    @media screen and (max-width: 992px) {
+      flex: 100%;
     }
 
 
@@ -116,6 +132,10 @@
   // .achievements__description
   &__description {
     font-size: .75rem;
+
+    @media screen and (max-width: 639px) {
+      font-size: 1rem;
+    }
   }
 
   // .achievements__image

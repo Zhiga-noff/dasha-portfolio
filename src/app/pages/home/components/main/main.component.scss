@@ -24,6 +24,10 @@
       width: 100%;
     }
 
+    @media screen and (max-width: 639px) {
+      font-size: 3rem;
+    }
+
   }
 
   // .home-main__subtitle
@@ -35,7 +39,11 @@
     max-width: 11rem;
     position: absolute;
 
-    transform: translate(988.703px, 12.931px);
+    transform: translate(41rem, .5rem);
+    @media screen and (max-width: 1200px) {
+      transform: translate(60vw, -20vh);
+      max-width: 5.5rem;
+    }
     @media screen and (max-width: 992px) {
       transform: translate(60vw, -20vh);
       max-width: 5.5rem;

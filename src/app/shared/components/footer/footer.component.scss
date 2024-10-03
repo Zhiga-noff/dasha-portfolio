@@ -3,6 +3,10 @@
 .footer {
   background-color: $text;
   padding: 3.3rem 4rem 2rem;
+  @media screen and (max-width: 639px) {
+    padding: 2rem 1rem;
+  }
+
   // .footer__row
   &__row {
     display: flex;
@@ -13,6 +17,8 @@
       flex-direction: column;
       row-gap: 1rem;
     }
+
+
   }
 
   // .footer__menu
@@ -73,6 +79,10 @@
     width: 100%;
     background-color: #757784;
     margin: 2.9rem 0 1.75rem;
+
+    @media screen and (max-width: 639px) {
+      margin: 1rem;
+    }
   }
 
   // .footer__policy

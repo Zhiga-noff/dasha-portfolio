@@ -12,9 +12,15 @@
       padding: 1rem;
     }
 
+    @media screen and (max-width: 639px) {
+      padding: 2rem 1rem;
+    }
+
     &_back {
       background-color: $lightBack;
     }
+
+
   }
 
   // .company__image
@@ -27,6 +33,10 @@
       margin-right: 1rem;
     }
 
+    @media screen and (max-width: 639px) {
+      display: none;
+    }
+
     img {
       height: 100%;
       //width: 100%;
@@ -36,6 +46,10 @@
         height: auto;
         width: 100%;
         align-items: center;
+      }
+
+      @media screen and (max-width: 639px) {
+        font-size: 1.7rem;
       }
     }
 
@@ -54,11 +68,25 @@
     @media screen and (max-width: 992px) {
       flex: auto;
     }
+
+
   }
 
   // .company__logo
   &__logo {
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 639px) {
+      max-width: 70%;
+      margin: 0 auto 2rem;
+      margin-bottom: 1rem;
+    }
+
+    img {
+      @media screen and (max-width: 639px) {
+        width: 100%;
+      }
+    }
   }
 
   // .company__title
@@ -75,6 +103,14 @@
     margin-bottom: 2rem;
     max-width: 29rem;
   }
+
+  &__btn {
+    @media screen and (max-width: 639px) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
 }
 
 

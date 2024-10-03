@@ -4,6 +4,10 @@
     padding-top: 3rem;
   }
 
+  @media screen and (max-width: 639px) {
+    font-size: 1.7rem;
+  }
+
 
   // .project-types__title
   &__title {
