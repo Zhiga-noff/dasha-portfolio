@@ -3,13 +3,24 @@
 .works {
   padding: 5rem 0;
 
+  @media screen and (max-width: 992px) {
+    padding: 3rem 0;
+  }
+
   &.darkBack {
     background-color: $lightBack;
+    @media screen and (max-width: 992px) {
+      padding: 3rem 1rem;
+    }
   }
 
   // .works__title
   &__title {
     margin-bottom: 5.8rem;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 2rem;
+    }
   }
 
   // .works__tablet
@@ -17,12 +28,19 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2.25rem;
+
+    @media screen and (max-width: 992px) {
+      gap: .8rem;
+    }
   }
 
   // .works__item
   &__item {
     overflow: hidden;
     border-radius: 1rem;
+    @media screen and (max-width: 992px) {
+      border-radius: .4rem;
+    }
 
     img {
       width: 100%;

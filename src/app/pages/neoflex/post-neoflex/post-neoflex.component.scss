@@ -1,8 +1,17 @@
 .post-neoflex {
   padding: 5rem 0;
   // .post-neoflex__title
+
+  @media screen and (max-width: 992px) {
+    padding: 3rem 0;
+  }
+
   &__title {
     margin-bottom: 5.8rem;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 2rem;
+    }
   }
 
   // .post-neoflex__table
@@ -10,6 +19,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 3rem;
+
+    @media screen and (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: .8rem;
+    }
   }
 
   // .post-neoflex__item
@@ -17,12 +31,20 @@
     border-radius: 1rem;
     overflow: hidden;
 
+    @media screen and (max-width: 992px) {
+      border-radius: .4rem;
+    }
+
     img {
       width: 100%;
     }
 
     &.spanItem {
       grid-column: span 2;
+
+      @media screen and (max-width: 992px) {
+        grid-column: auto;
+      }
     }
   }
 }

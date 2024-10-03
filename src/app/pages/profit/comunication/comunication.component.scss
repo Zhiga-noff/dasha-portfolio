@@ -1,8 +1,15 @@
 .comunication {
   padding: 5rem 0;
+
+  @media screen and (max-width: 992px) {
+    padding: 3rem 0;
+  }
   // .comunication__title
   &__title {
     margin-bottom: 5.8rem;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 2rem;
+    }
   }
 
   // .comunication__table-lg
@@ -11,6 +18,12 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 992px) {
+      gap: .8rem;
+      margin-bottom: .8rem;
+    }
+
 
     &:last-child {
       margin-bottom: 0;
@@ -25,6 +38,10 @@
   &__item {
     border-radius: 1rem;
     overflow: hidden;
+
+    @media screen and (max-width: 992px) {
+      border-radius: .4rem;
+    }
 
     img {
       width: 100%;
