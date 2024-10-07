@@ -5,7 +5,7 @@
     <h2 class="company__title title">Создаю дизайн, который помогает бизнесу</h2>
     <div class="company__row">
       <z-company *ngFor="let comp of company; let index = index" [item]="comp" [back]="(index+1)%2===0"
-                 class="company__elem"/>
+                 class="company__elem anim-items "/>
     </div>
   </article>
   <z-achievements/>

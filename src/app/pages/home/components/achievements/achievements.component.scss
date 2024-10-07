@@ -87,6 +87,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+
+    transform: translateY(100%);
+    opacity: 0;
+    transition-duration: .5s;
     // .achievements__item_{{index+1}}
     @media screen and (max-width: 992px) {
       height: 12rem;
@@ -97,6 +101,10 @@
       flex: 100%;
     }
 
+    &.anim {
+      transform: translateY(0);
+      opacity: 1;
+    }
 
     &_1 {
       top: 4rem;
@@ -105,8 +113,13 @@
       }
     }
 
+    &_2 {
+      transition-delay: .3s;
+    }
+
     &_3 {
       top: 4rem;
+      transition-delay: .3s;
       @media screen and (max-width: 992px) {
         top: auto;
       }
@@ -115,6 +128,10 @@
         right: 0;
         left: 2rem;
       }
+    }
+
+    &_4 {
+      transition-delay: .5s;
     }
 
   }

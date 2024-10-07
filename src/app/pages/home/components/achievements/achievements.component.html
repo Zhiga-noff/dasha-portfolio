@@ -5,7 +5,7 @@
   <div class="achievements__row">
     <h3 class="achievements__subtitle title">Несколько фактов обо мне и моем опыте</h3>
     <div class="achievements__mosaic">
-      <div class="achievements__item achievements__item_{{index+1}} border"
+      <div class="achievements__item achievements__item_{{index+1}} border anim-items no-anim-again"
            *ngFor="let achieve of achievements; let index=index">
         <span *ngIf="achieve.spanText">{{achieve.spanText}}</span>
         <p class="achievements__result" *ngIf="achieve.result">{{achieve.result}}</p>

@@ -28,6 +28,14 @@
 
   &__elem {
     flex: 0 0 25%;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition-duration: 1s;
+
+    &.anim {
+      transform: translateX(0);
+      opacity: 1;
+    }
   }
 
 }
