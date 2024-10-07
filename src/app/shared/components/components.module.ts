@@ -12,6 +12,7 @@ import { MainBannerComponent } from './main-banner/main-banner.component';
 import { ItemListLgComponent } from './ui/item-list-lg/item-list-lg.component';
 import { ItemListMdComponent } from './ui/item-list-md/item-list-md.component';
 import { PopUpAdComponent } from './pop-up-ad/pop-up-ad.component';
+import { ScrollUpBtnComponent } from './scroll-up-btn/scroll-up-btn.component';
 
 @NgModule({
   imports: [SharedModule, CommonModule, ReactiveFormsModule, RouterLink],
@@ -24,6 +25,7 @@ import { PopUpAdComponent } from './pop-up-ad/pop-up-ad.component';
     ItemListMdComponent,
     ItemListLgComponent,
     PopUpAdComponent,
+    ScrollUpBtnComponent,
   ],
   declarations: [
     HeaderComponent,
@@ -35,6 +37,7 @@ import { PopUpAdComponent } from './pop-up-ad/pop-up-ad.component';
     ItemListLgComponent,
     ItemListMdComponent,
     PopUpAdComponent,
+    ScrollUpBtnComponent,
   ],
 })
 export class ComponentsModule {}
