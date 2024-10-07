@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { PopupService } from '../../../popup.service';
 
 interface IFormFields {
   name: FormControl;
@@ -16,6 +17,8 @@ interface IFormFields {
 export class FormComponent implements OnInit {
   protected form: FormGroup;
   protected approval: boolean = false;
+
+  constructor(protected popup: PopupService) {}
 
   ngOnInit(): void {
     this.form = new FormGroup<IFormFields>({
@@ -65,12 +68,12 @@ export class FormComponent implements OnInit {
       body: formData,
     });
     console.log(this.form.value);
-    if (!response.ok) {
-      // this.form.reset();
-      // this.popup.successfulResult = true;
-      // setTimeout(() => {
-      //   this.popup.setOff();
-      // }, 10000);
+    if (response.ok) {
+      this.form.reset();
+      this.popup.successfulResult = true;
+      setTimeout(() => {
+        this.popup.setOff();
+      }, 10000);
     }
 
     console.log(response);

@@ -17,10 +17,10 @@
   $mail->IsHTML(true);
 
   // Измени адрес отправителя и имя отправителя согласно своим предпочтениям
-  $mail->setFrom('info@zhiganova.com', 'Сайт Zhiganova');
+  $mail->setFrom('info@zhiganova.com', 'Сайт zhiga-nova.ru');
 
   // Замени адрес получателя на тот, куда ты хочешь получать электронные письма
-  $mail->addAddress('zhiganov_k.n@mail.ru');
+  $mail->addAddress('darya.daria@bk.ru');
 
   // Тема письма
   $mail->Subject = 'Заявка с сайта';

@@ -64,11 +64,11 @@ export class PopUpAdComponent implements OnInit {
     });
     console.log(this.form.value);
     if (!response.ok) {
-      // this.form.reset();
-      // this.popup.successfulResult = true;
-      // setTimeout(() => {
-      //   this.popup.setOff();
-      // }, 10000);
+      this.form.reset();
+      this.popup.successfulResult = true;
+      setTimeout(() => {
+        this.popup.setOff();
+      }, 10000);
     }
 
     console.log(response);
