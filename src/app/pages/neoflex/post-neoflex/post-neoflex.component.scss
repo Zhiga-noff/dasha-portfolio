@@ -34,12 +34,18 @@
   &__item {
     border-radius: 1rem;
     overflow: hidden;
+    transition-duration: .7s;
 
     @media screen and (max-width: 992px) {
       border-radius: .4rem;
     }
 
+    &:hover {
+      transform: scale(1.1);
+    }
+
     img {
+
       width: 100%;
     }
 

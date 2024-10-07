@@ -44,6 +44,12 @@
   &__item {
     overflow: hidden;
     border-radius: 1rem;
+    transition-duration: .7s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
     @media screen and (max-width: 992px) {
       border-radius: .4rem;
     }

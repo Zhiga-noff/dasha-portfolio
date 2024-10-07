@@ -16,6 +16,11 @@
   &__item {
     overflow: hidden;
     margin-bottom: 3rem;
+    transition-duration: .7s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
 
     @media screen and (max-width: 992px) {
       margin-bottom: .8rem;
