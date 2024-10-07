@@ -1,0 +1,39 @@
+<div class="popup">
+  <div class="popup__overlay" (click)="popup.setOff()"></div>
+  <div class="popup__container" *ngIf="!popup.successfulResult; else successful">
+    <h2 class="title">Оставьте заявку</h2>
+    <h3 class="subtitle">Оставьте заявку и я с вами свяжусь в кратчайшее время</h3>
+    <form action="#" class="popup__form" [formGroup]="form" (ngSubmit)="submit()">
+      <div class="popup__validate">
+        <input type="text" name="name" placeholder="ФИО" class="form__input" formControlName="name"
+               [ngClass]="{invalid: form.get('name').touched && form.get('name').invalid}"/>
+      </div>
+
+      <div class="popup__validate">
+        <input type="tel" name="phone" placeholder="Телефон" class="form__input" formControlName="phone"
+               (input)="formatPhoneNumber()"
+               [ngClass]="{invalid: form.get('phone').touched && form.get('phone').invalid}"/>
+      </div>
+
+      <div class="popup__validate">
+        <input type="email" name="email" placeholder="E-mail" class="form__input" formControlName="email"
+               [ngClass]="{invalid: form.get('email').touched && form.get('email').invalid}"/>
+      </div>
+
+
+      <button class="btn md" type="submit" [disabled]="form.invalid">Оставить заявку</button>
+    </form>
+    <button class="popup__close-button" (click)="popup.setOff()"></button>
+  </div>
+
+  <ng-template #successful>
+    <div class="popup__container">
+      <div class="popup__successful">
+        <img src="assets/img/successful.svg" alt="">
+      </div>
+      <h2 class="title">Запрос отправлен</h2>
+      <h3 class="subtitle">Ожидайте в ближайшее время с вами свяжутся</h3>
+      <button class="btn md" type="button" (click)="popup.setOff()">Закрыть</button>
+    </div>
+  </ng-template>
+</div>

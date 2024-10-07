@@ -3,6 +3,7 @@ import { menu } from '../../../../libs/constant/memu.constant';
 import { NavigationEnd, Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 import { DOCUMENT, ViewportScroller } from '@angular/common';
+import { PopupService } from '../../../popup.service';
 
 @Component({
   selector: 'z-header',
@@ -17,6 +18,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
   private routeSubscription: Subscription;
 
   constructor(
+    protected popup: PopupService,
     protected router: Router,
     private viewScroller: ViewportScroller,
     @Inject(DOCUMENT) private document: Document,

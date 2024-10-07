@@ -11,6 +11,7 @@ import { FormComponent } from './form/form.component';
 import { MainBannerComponent } from './main-banner/main-banner.component';
 import { ItemListLgComponent } from './ui/item-list-lg/item-list-lg.component';
 import { ItemListMdComponent } from './ui/item-list-md/item-list-md.component';
+import { PopUpAdComponent } from './pop-up-ad/pop-up-ad.component';
 
 @NgModule({
   imports: [SharedModule, CommonModule, ReactiveFormsModule, RouterLink],
@@ -22,6 +23,7 @@ import { ItemListMdComponent } from './ui/item-list-md/item-list-md.component';
     MainBannerComponent,
     ItemListMdComponent,
     ItemListLgComponent,
+    PopUpAdComponent,
   ],
   declarations: [
     HeaderComponent,
@@ -32,6 +34,7 @@ import { ItemListMdComponent } from './ui/item-list-md/item-list-md.component';
     MainBannerComponent,
     ItemListLgComponent,
     ItemListMdComponent,
+    PopUpAdComponent,
   ],
 })
 export class ComponentsModule {}

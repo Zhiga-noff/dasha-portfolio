@@ -1,4 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { PopupService } from '../../../../popup.service';
 
 @Component({
   selector: 'z-main',
@@ -8,6 +9,8 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 export class MainComponent {
   @ViewChild('containerElement') container: ElementRef;
   @ViewChild('cursor') cursor: ElementRef;
+
+  constructor(protected popup: PopupService) {}
 
   moveImage(e: MouseEvent) {
     if (window.innerWidth <= 992) {
