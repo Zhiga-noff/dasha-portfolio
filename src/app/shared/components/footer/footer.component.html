@@ -1,17 +1,24 @@
 <footer class="footer border">
   <nav class="footer__row">
     <ul class="footer__menu">
-      <li><a href="#">Главная</a></li>
+      <li><a routerLink="/">Главная</a></li>
       <li><a href="#">Проекты</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
     <div class="footer__social">
-      <a href="#" (mouseenter)="tlgMouseIn=true" (mouseleave)="tlgMouseIn=false">
-        <z-telegram-icon [active]="tlgMouseIn"/>
+      <a href="https://t.me/darya_zhiganova" target="_blank" (mouseenter)="tlgMouseIn=true"
+         (mouseleave)="tlgMouseIn=false">
+        <span class="footer__icon">
+        <img src="./assets/img/footer/tlg-nonact.svg" class="noneAct" alt="">
+        <img src="./assets/img/footer/tlg.svg" class="act" alt="">
+        </span>
         <span>Telegram</span>
       </a>
-      <a href="#" (mouseenter)="vkMouseIn=true" (mouseleave)="vkMouseIn=false">
-        <z-vk [active]="vkMouseIn"/>
+      <a href="https://vk.com/dariyshka94" target="_blank" (mouseenter)="vkMouseIn=true" (mouseleave)="vkMouseIn=false">
+        <span class="footer__icon">
+        <img src="./assets/img/footer/vk-nonact.svg" class="noneAct" alt="">
+        <img src="./assets/img/footer/vk.svg" class="act" alt="">
+        </span>
         <span>VK.com</span>
       </a>
 
