@@ -1,16 +1,16 @@
-import { IAchievements } from '../types/achievements.types';
+import {IAchievements} from '../types/achievements.types';
 
 export const achievementsConstant: IAchievements[] = [
   {
     image: 'assets/img/home/achievement/point.png',
-    description: 'лет в профессии последние 3,5 года в ИТ-компаниях',
+    description: 'лет в профессии; последние 3,5 года в ИТ-компаниях',
     result: '5',
     spanText: null,
   },
   {
     image: null,
     description:
-      'В 2024 году прошла курсы по созданию анимированных презентаций в “Bonnie&Slide”, занимаюсь живописью  и рисованием, самостоятельно изучаю After Effects',
+      'В 2024 году прошла курсы по созданию анимированных презентаций в Bonnie&Slide, занимаюсь живописью и рисованием, самостоятельно изучаю After Effects',
     result: null,
     spanText: null,
   },

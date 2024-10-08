@@ -1,4 +1,4 @@
-import { ICompany } from '../types/company.types';
+import {ICompany} from '../types/company.types';
 
 export const companyConstant: ICompany[] = [
   {
@@ -16,7 +16,7 @@ export const companyConstant: ICompany[] = [
     logo: 'assets/img/logos/profit.svg',
     image: 'assets/img/home/company/profit.png',
     description: [
-      'Группа ИТ-компаний, занимающихся комплексной автоматизацией управления крупными предприятиями, проектированием и внедрением инжиниринговых и ИТ-проектов и т.д.',
+      'Группа ИТ-компаний, занимающихся комплексной автоматизацией управления крупными предприятиями, проектированием и внедрением инжиниринговых и ИТ-проектов.',
       'Развитие и поддержка внутренних и внешних коммуникаций компании, оформление презентаций, полиграфия, мерч.',
     ],
     route: '/prof-it',
@@ -35,7 +35,7 @@ export const companyConstant: ICompany[] = [
     name: 'Другие проекты',
     logo: null,
     image: null,
-    description: ['Здесь собраны остальные проекты :)'],
+    description: ['Здесь собраны остальные проекты ;-)'],
     route: '/other-project',
   },
 ];
